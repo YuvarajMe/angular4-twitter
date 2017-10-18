@@ -1,28 +1,34 @@
-<div>
-  <mat-toolbar color="primary">
-    <span><mat-icon>mood</mat-icon></span>
+<div class="container">
+  <div fxLayout="row">
+    <mat-toolbar color="primary">
+      <span>Angular4-Twitter</span>
+    </mat-toolbar>
+  </div>
+</div>
 
-    <span>Yay, Material in Angular 2!</span>
+<div id="loginWrap">
+  <div fxLayout="column" fxLayoutAlign="center center">
 
-    <button mat-icon-button [mat-menu-trigger-for]="menu">
-      <mat-icon>more_vert</mat-icon>
-    </button>
-  </mat-toolbar>
-  <mat-menu x-position="before" #menu="matMenu">
-    <button mat-menu-item>Option 1</button>
-    <button mat-menu-item>Option 2</button>
-  </mat-menu>
+    <mat-card class="loginCard">
+      <div id="loginTitle">Login to continue</div>
+      <form>
+        <mat-card-content>
+          <div fxLayout="column" fxLayoutAlign="space-evenly stretch">
+            <mat-form-field>
+              <input matInput placeholder="Please enter username">
+            </mat-form-field>
 
-  <mat-card>
-    <button mat-button>All</button>
-    <button mat-raised-button>Of</button>
-    <button mat-raised-button color="primary">The</button>
-    <button mat-raised-button color="accent">Buttons</button>
-  </mat-card>
+            <mat-form-field>
+              <input matInput placeholder="Please enter password">
+            </mat-form-field>
+            <br/>
+            <br/>
+            <button mat-raised-button color="primary">Login</button>
 
-  <span class="done">
-    <button mat-fab>
-      <mat-icon>check circle</mat-icon>
-    </button>
-  </span>
+          </div>
+        </mat-card-content>
+      </form>
+
+    </mat-card>
+  </div>
 </div>
